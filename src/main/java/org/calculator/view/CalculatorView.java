@@ -106,8 +106,14 @@ public class CalculatorView extends JFrame{
         return fieldB.getText();
     }
 
-    public void setRestult(int result) {
-        labelResult.setText(DEFAULT_RESULT_MESSAGE + result);
+    public void setRestult(String result) {
+        int intResult;
+        try{
+            intResult = Integer.parseInt(result);
+            labelResult.setText(DEFAULT_RESULT_MESSAGE + intResult);
+        }catch (NumberFormatException nfe){
+            labelResult.setText(result);
+        }
     }
 
     public void exibir() {

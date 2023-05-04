@@ -3,6 +3,10 @@
 
 ## [Unreleased]
 
+## [1.0.3] - 04-05-2023 - David Neres
+### Added
+- defensive programming in CalculatorController
+
 ## [1.0.2] - 04-05-2023 - David Neres
 ### Changed
 - remove .idea folder from remote repository
